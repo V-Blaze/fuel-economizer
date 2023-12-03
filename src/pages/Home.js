@@ -59,12 +59,12 @@ const Home = () => {
       <main className=" w-full flex flex-col items-center">
         <section className="w-[95%] md:w-[50%] flex flex-col items-center gap-3">
           <CountDownTImmer targetDate={targetTime} />
-          <h1 className="text-2xl text-[#ca8806] font-bold">
+          <h1 className="text-2xl text-[#ca8806] font-bold text-center">
             Namur Fuel Economizer - Revolutionize Your Drive
           </h1>
           <img src={hourSale} alt="sales banner" className=" my-3 w-[40%] " />
           <span className=" font-bold">For Enquries, Call/WhatsApp 08060340700</span>
-          <h4 className=" font-bold italic">
+          <h4 className=" font-bold italic text-center">
             Limited-Time Offer:
             {' '}
             <span className=" font-bold text-2xl text-[#2fbe00]">N45,000</span>
@@ -181,8 +181,8 @@ const Home = () => {
               <span className=" font-bold line-through">REGULAR PRICE: N55,000 PER ONE</span>
               <span className="font-bold text-4xl text-red-600">Promo Price: N45,000</span>
             </div>
-            <span className="block font-bold text-lg italic underline">GET FREE DELIVERY NATION WIDE TO YOUR DOOR STEP</span>
-            <span className="font-bold text-4xl text-red-600 my-4 block">SPECIAL OFFER: GET 2 FOR N80,000</span>
+            <span className="block font-bold text-lg italic underline text-center">GET FREE DELIVERY NATION WIDE TO YOUR DOOR STEP</span>
+            <span className="font-bold text-4xl text-red-600 my-4 block text-center">SPECIAL OFFER: GET 2 FOR N80,000</span>
           </div>
           <button
             className="text-xl bg-[#2fbe00] w-[40%] py-2 rounded-md font-bold text-white hover:bg-green-800 my-2 flex  justify-center gap-1"
