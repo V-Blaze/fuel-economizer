@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { BsCartCheckFill } from 'react-icons/bs';
 
 // COMPONENTS
@@ -13,6 +13,11 @@ import { Footer, Form, TestimoneyCard } from '../components';
 
 const Home = () => {
   const [targetTime, setTargetTime] = useState('2023-11-12T12:00:00');
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    formRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const currentDate = new Date();
@@ -76,6 +81,7 @@ const Home = () => {
           <button
             className="text-xl bg-[#2fbe00] w-[40%] py-2 rounded-md font-bold text-white hover:bg-green-800 my-2 flex  justify-center gap-1"
             type="button"
+            onClick={scrollToForm}
           >
             <BsCartCheckFill />
             ORDER NOW
@@ -181,6 +187,7 @@ const Home = () => {
           <button
             className="text-xl bg-[#2fbe00] w-[40%] py-2 rounded-md font-bold text-white hover:bg-green-800 my-2 flex  justify-center gap-1"
             type="button"
+            onClick={scrollToForm}
           >
             <BsCartCheckFill />
             ORDER NOW
@@ -213,7 +220,7 @@ const Home = () => {
           <img src={warranty} alt="one year warranty" className="w-[40%]" />
         </section>
         <section className="w-[95%] md:w-[50%] border-2 border-[#ac4b00] rounded-md flex flex-col items-center">
-          <div className="flex flex-col justify-center items-center w-[80%] ">
+          <div className="flex flex-col justify-center items-center w-[80%] " ref={formRef}>
             <p className="text font-bold my-3 text-center">
               Please Do Not order for Jokes, Dont Place An Order To Tell Us To Come Next
               Week. Please We Want Only Buyers Who Are Ready To Purchase This Product To Enjoy

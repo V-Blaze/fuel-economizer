@@ -1,5 +1,7 @@
+import { Route, Routes } from 'react-router-dom';
+
 // PAGES
-import { Home } from './pages';
+import { Home, Policy } from './pages';
 
 // STYLESHEET
 import './App.css';
@@ -7,7 +9,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/policy" element={<Policy />} />
+      </Routes>
     </div>
   );
 }
