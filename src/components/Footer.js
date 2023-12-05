@@ -5,7 +5,7 @@ const Footer = () => (
     <span>Contact Us At: 08060340700</span>
     <span>WhatsApp Us At: 09066711277</span>
     <span>FaceBook: Fuel-Economizer</span>
-    <span>Support@fueleconomizer.com.ng</span>
+    <span>support@fueleconomizer.com.ng</span>
     <span className=" font-bold text-teal-600">
       <a href="/policy">
         Privacy Policy | Disclaimer

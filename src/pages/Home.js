@@ -7,6 +7,7 @@ import CountDownTImmer from '../components/CountDownTImmer';
 // ASSETS
 import {
   cod,
+  fuelEco2,
   fuelEco4, fuelEco5, fuelEcoMain, hourSale, timeOffer, warranty,
 } from '../assets/images';
 import { Footer, Form, TestimoneyCard } from '../components';
@@ -67,8 +68,6 @@ const Home = () => {
           <h4 className=" font-bold italic text-center">
             Limited-Time Offer:
             {' '}
-            <span className=" font-bold text-2xl text-[#2fbe00]">N45,000</span>
-            {' '}
             with
             {' '}
             <span className="font-bold text-xl text-red-500"> Free Nationwide Delivery!</span>
@@ -128,6 +127,11 @@ const Home = () => {
               contributing to a reduction in carbon footprint.
             </li>
           </ul>
+        </section>
+        <section className="w-[95%] md:w-[50%]">
+          <div className="w-full h-full flex">
+            <img src={fuelEco2} alt="fuelEco5" className=" w-[100%] rounded-md" />
+          </div>
         </section>
         <section className="w-[95%] md:w-[50%]">
           <h4
@@ -248,11 +252,62 @@ const Home = () => {
             ))}
           </div>
         </section>
-        <section className="w-[95%] md:w-[50%]" />
-        {/* <section className="w-[95%] md:w-[50%]">
-          <h4>Frequently Asked Questions</h4>
-
-        </section> */}
+        <section className="w-[95%] md:w-[50%]">
+          <h4
+            className="my-4 w-full bg-[#ac4b00] text-white text-center py-2 font-black text-xl"
+          >
+            BECOME A DISTRIBUTOR
+          </h4>
+          <div className="flex flex-col items-center">
+            <iframe
+              src="https://drive.google.com/file/d/1RUb5YWG3wPZFZKhQj2D1U06Wt5Etxqyl/preview"
+              className="w-[90%] h-80 border-2 border-orange-500 rounded-lg dark:border-gray-700 mb-3"
+              allow="autoplay"
+              title="Fuel Economizer"
+            />
+            <div>
+              <p className=" text-center text-sm italic">
+                Are you ready to embark on a lucrative journey as a distributor
+                of the revolutionary Namur Fuel Economizer? Fuel the success of
+                your business and join us in empowering drivers across Nigeria
+                with cutting-edge fuel efficiency technology.
+              </p>
+              <h5 className=" text-[#ac4b00] text-center font-bold text-xl my-3">
+                Why Choose Namur Fuel Economizer Distribution?
+              </h5>
+            </div>
+            <ul className="flex flex-col items-start gap-2">
+              <li className=" text-start">
+                <span className="font-bold text-lg mr-2">High Demand:</span>
+                The market is craving the efficiency and savings that Namur Fuel
+                Economizer offers. Tap into a product with unprecedented demand.
+              </li>
+              <li className=" text-start">
+                <span className="font-bold text-lg mr-2">Lucrative Margins:</span>
+                Enjoy generous profit margins as you provide drivers with a
+                solution to soaring fuel costs and environmental concerns.
+              </li>
+              <li className=" text-start">
+                <span className="font-bold text-lg mr-2">Nationwide Recognition:</span>
+                Benefit from a product that&apos;s making waves nationwide.
+                Join a brand that stands for quality and innovation.
+              </li>
+              <li className=" text-start">
+                <span className="font-bold text-lg mr-2">Easy Start-Up:</span>
+                No complicated processes! Start your distribution journey
+                with ease and watch your business thrive.
+              </li>
+            </ul>
+            <div>
+              <p className=" font-bold italic text-lg text-red-600 text-center">
+                Contact Us on WhatsApp: 📲 +2348060340700 | +2349066711277 And Express Your Interest
+              </p>
+              <p className=" font-bold italic text-xl text-[#ac4b00] my-2 text-center">
+                Gain access to exclusive distributor benefits and resources Now!!!
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
