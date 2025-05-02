@@ -183,10 +183,10 @@ const Home = () => {
             <h3 className="text-2xl text-red-600 font-bold">BUY 1 FUEL ECONOMIZER</h3>
             <div className=" my-4 flex flex-col items-center">
               <span className=" font-bold line-through">REGULAR PRICE: N55,000 PER ONE</span>
-              <span className="font-bold text-4xl text-red-600">Promo Price: N45,000</span>
+              <span className="font-bold text-4xl text-red-600">Promo Price: N48,000</span>
             </div>
             <span className="block font-bold text-lg italic underline text-center">GET FREE DELIVERY NATION WIDE TO YOUR DOOR STEP</span>
-            <span className="font-bold text-4xl text-red-600 my-4 block text-center">SPECIAL OFFER: GET 2 FOR N80,000</span>
+            <span className="font-bold text-4xl text-red-600 my-4 block text-center">SPECIAL OFFER: GET 2 FOR N90,000</span>
           </div>
           <button
             className="text-xl bg-[#2fbe00] w-[40%] py-2 rounded-md font-bold text-white hover:bg-green-800 my-2 flex  justify-center gap-1"
